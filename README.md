@@ -8,7 +8,7 @@ To run this for the first time, run these scripts from the ROOT directory in ORD
 
 More scripts:
 
-	- on root:
+	on root:
 	- docker compose up	-	sets up Docker v4 environment with Postgres v 15
 	- docker compose down	-	undoes Docker environment
 	- npm run install:all	-	installs dependencies on root, front and back (note: it installs Dev dependencies as well)
@@ -23,9 +23,13 @@ More scripts:
 	- npm i -D		-	installs development dependencies
 
 	on backend:
-    	- npm start			-	starts server
+	- npm start			-	starts server
 	- npm run dev			-	starts server with nodemon (requires Dev dependencies)
 	- npm i				-	installs standard dependencies
 	- npm i -D			-	installs development dependencies
 	- npm run migrations:generate	-	generate a new migration according to the Entities provided
 	- npm run migrations:run	-	runs the present migration
+	
+
+TO DO:
+	I want to integrate an MSC structure. This "controller only" architecture is not scalable in the slightest.
