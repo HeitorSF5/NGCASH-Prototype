@@ -1,0 +1,41 @@
+{
+  "name": "ngcash-prototype",
+  "version": "1.0.0",
+  "description": "Este é um prototipo desenvolvido para o processo seletivo da ngcash",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/index.js",
+    "client": "cd frontend && npm start",
+    "typeorm:migrate": "cd backend && npm run migration:run",
+    "server": "cd backend && npm run dev",
+    "start:all": "concurrently \"npm run server\" \"npm run migrate\" \"npm run client\"",
+    "start:": "concurrently \"npm run server\" \"npm run client\"",
+    "migrate": "npm run typeorm:migrate",
+    "front:install": "cd frontend && npm i -D",
+    "back:install": "cd backend && npm i -D",
+    "install:all": "concurrently \"npm install\" \"npm run front:install\" \"npm run back:install\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/HeitorSF5/NGCASH-Prototype.git"
+  },
+  "author": "Heitor Souza Francilino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HeitorSF5/NGCASH-Prototype/issues"
+  },
+  "homepage": "https://github.com/HeitorSF5/NGCASH-Prototype#readme",
+  "dependencies": {
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.11.9",
+    "concurrently": "^7.6.0",
+    "create-react-app": "^5.0.1",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0",
+    "react-scripts": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.3"
+  }
+}
