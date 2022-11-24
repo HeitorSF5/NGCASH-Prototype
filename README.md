@@ -6,6 +6,7 @@ To run this for the first time, run these scripts from the ROOT directory in ORD
 
 
 More scripts:
+
 	on root
 	docker compose up	-	sets up Docker v4 environment with Postgres v 15
 	docker compose down	-	undoes Docker environment
@@ -15,7 +16,7 @@ More scripts:
 	npm run migrate		-	runs migration
 
 	on frontend
-npm start		-	starts react app in new browser
+	npm start		-	starts react app in new browser
 	npm run dev		-	starts react app in new browser with nodemon (requires Dev dependencies)
 	npm i			-	installs standard dependencies
 	npm i -D		-	installs development dependencies
