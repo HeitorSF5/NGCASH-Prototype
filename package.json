@@ -14,7 +14,7 @@
     "migrate": "npm run typeorm:migrate",
     "front:install": "cd frontend && npm i -D",
     "back:install": "cd backend && npm i -D",
-    "install:all": "concurrently \"npm install\" \"npm run front:install\" \"npm run back:install\""
+    "install:all": "concurrently \"npm run front:install\" \"npm run back:install\""
   },
   "repository": {
     "type": "git",
