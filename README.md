@@ -3,6 +3,7 @@ To run this for the first time, run these scripts from the ROOT directory in ORD
     docker compose up
     npm i
     npm run install:all
+    npm run start:all
 
 
 More scripts:
