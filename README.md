@@ -32,4 +32,6 @@ More scripts:
 	
 
 TO DO:
-	I want to integrate an MSC structure. This "controller only" architecture is not scalable in the slightest.
+	- MSC structure. This "controller only" architecture is not scalable in the slightest.
+	- Real time Balance update in the DB on each transaction
+	- Username display for transaction list as well as Account Id (if not replace it entirely)
