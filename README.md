@@ -32,6 +32,9 @@ More scripts:
 	
 
 TO DO:
+	<br>
 	- MSC structure. This "controller only" architecture is not scalable in the slightest.
+	<br>
 	- Real time Balance update in the DB on each transaction
+	<br>
 	- Username display for transaction list as well as Account Id (if not replace it entirely)
